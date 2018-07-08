@@ -163,9 +163,20 @@ greet.vietnamese()
 // hello3.message = "Change hello NodeJS"
 // var hello32 = require("./hello3")
 // hello32.sayHello()
-var Hello4 = require("./hello4")
-var hello4 = new Hello4()
-hello4.sayHello()
+// var Hello4 = require("./hello4")
+// var hello4 = new Hello4()
+// hello4.sayHello()
 
-var hello5 = require("./hello5").sayHello
-hello5()
+// var hello5 = require("./hello5").sayHello
+// hello5()
+
+// var util = require("util")
+// var name = "Hoa"
+// var message = util.format("Hello, %s", name)
+// console.log(message)
+// util.log(message)
+
+var url = require("url")
+//https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_format_format_args
+var urlInfor = url.parse("https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_format_format_args")
+console.log(urlInfor)
