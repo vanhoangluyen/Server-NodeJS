@@ -176,7 +176,13 @@ greet.vietnamese()
 // console.log(message)
 // util.log(message)
 
-var url = require("url")
+//var url = require("url")
 //https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_format_format_args
-var urlInfor = url.parse("https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_format_format_args")
-console.log(urlInfor)
+//var urlInfor = url.parse("https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_format_format_args")
+//console.log(urlInfor)
+
+var arr = [4,5,6]
+for (var item of arr) {
+    console.log(item, item == 5)
+}
+
