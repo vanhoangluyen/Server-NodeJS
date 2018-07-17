@@ -9,17 +9,20 @@ function logSaying(fn) {
     fn()
 }
 logSaying(sayHello)  
-
 // Function Expression
 var sayGoodbye = function() {
     console.log("GoodBye !!!")
 }
 sayGoodbye()
+ */
+
+/*
 
 logSaying(function() {
     console.log("Hello NodeJS, This is expression !!!")
 })
 */
+
 /*
 var myVariable = "Hello World !!"
 myVariable = "I don't know"
@@ -180,9 +183,21 @@ greet.vietnamese()
 //https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_format_format_args
 //var urlInfor = url.parse("https://nodejs.org/dist/latest-v8.x/docs/api/util.html#util_util_format_format_args")
 //console.log(urlInfor)
-
+//                                                                  Mark: - Using Loop
+/*
 var arr = [4,5,6]
 for (var item of arr) {
     console.log(item, item == 5)
 }
+*/
+/*
+var aArray = []
+aArray.push(1)
+aArray.push(2)
+aArray.push(3)
 
+aArray.forEach(function(item) {
+
+    console.log(item)
+})
+*/
