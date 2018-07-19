@@ -201,3 +201,23 @@ aArray.forEach(function(item) {
     console.log(item)
 })
 */
+var Emitter = require("./emitter")
+var eventConfig = require("./config").events
+
+var emitter = new Emitter()
+emitter.on(eventConfig.BAD_SCORE, function() {
+    console.log("Một môn nào đó bị điểm kém")
+})
+emitter.on(eventConfig.BAD_SCORE, function() {
+    console.log("Đã có điểm kém, cần phát thông báo tới phụ huynh")
+})
+// bảng điểm
+var scores = [10, 4, 7]
+
+for (var score of scores) {
+    if (score < 5) {
+        console.log("Điểm thấp là :",score)
+        emitter.emit(eventConfig.BAD_SCORE)
+    }
+}
+
